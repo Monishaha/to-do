@@ -1,20 +1,26 @@
 <html>
   <head>
     <title>To-doooo</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body style="background-color: rgb(206, 205, 202);">
-    <h3 style="color:aliceblue ; text-align: center; border: 2px solid #00658D; background-color:#00658D">
-      <b> MY TODO </b>
-    </h3>
+  <body>
+    <div id="nav-bar">
+      <h4 >MY TODO </h4>
+    </div>
+    <br/>
     <form style="text-align: center">
-        <input type="text" id="add-todo" placeholder="Add here...">
-        <input type="button" onclick="alert('Added succesfully!')" value="+">
+      <input type="text" id="add-todo" class="todo-input" placeholder="Add here..." />
+      <input type="button" class="todo-input"
+        id="add-btn"
+        onclick="alert('Added succesfully!')"
+        value="+"
+      />
     </form>
-    <ol>
-        <li style="border:2px solid #00658D; text-align: center">Buy Milk</li>
-        <li style="border:2px solid #00658D; text-align: center">Buy Orange</li>
-        <li style="border:2px solid #00658D; text-align: center">Visit Clinic</li>
-        <li style="border:2px solid #00658D; text-align: center">Clean dishes</li>
-    </ol>
+    <ul>
+      <li class="todo-list">Buy Milk</li>
+      <li class="todo-list">Buy Orange</li>
+      <li class="todo-list">Visit Clinic</li>
+      <li class="todo-list">Clean dishes</li>
+    </ul>
   </body>
 </html>
